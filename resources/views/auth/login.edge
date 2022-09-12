@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{--  bootstrap  --}}
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
     <title>Nombre_Apellido</title>
 </head>
 <body>
+
+     {{-- Content  --}}
     <form action="/login" method="POST">    
         <label for="email">email</label> 
         <input type="email" name="email" id="email">
@@ -15,6 +18,10 @@
         <input type="password" name="password" id="password">
         <button type="submit">Iniciar Sesión</button>
     </form>
+
+    <li><a href="/register">Register</a></li>
+
+    {{--  bootstrap  --}}
     <script src="bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
