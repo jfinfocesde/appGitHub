@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{--  bootstrap  --}}
+    {{-- bootstrap --}}
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Nombre_Apellido</title>
 </head>
+
 <body>
 
-     {{-- Content  --}}
-    <form action="/login" method="POST">    
-        <label for="email">email</label> 
-        <input type="email" name="email" id="email">
-        <label for="password">password</label> 
-        <input type="password" name="password" id="password">
-        <button type="submit">Iniciar Sesión</button>
-    </form>
+    {{-- Content --}}
 
-    <li><a href="/register">Register</a></li>
+    <div class="container">
+        <form action="/login" method="POST" >
+            <label for="email">Ingrese su correo</label>
+            <input placeholder="Correo" name="email" id="email">
+            <label for="password">Ingrese su contraseña</label>
+            <input placeholder="Contraseña" type="password" name="password" id="password">
+            <button type="submit">Iniciar Sesión</button>
+           <a href="/register">Registrarse</a>
+        </form>
+        
+    </div>
 
-    {{--  bootstrap  --}}
+
+    {{-- bootstrap --}}
     <script src="bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
-
-
