@@ -6,6 +6,7 @@ html, body {
   height: 100vh;
   color: #46444c;
   position: relative;
+  
 }
 
 body:before {
@@ -74,3 +75,8 @@ main code {
   font-size: 16px;
   background: #e6e2ff;
 }
+
+body{
+  background-image: url("http://arquitecturapanamericana.com/wp-content/uploads/2017/07/SELECCIONADA-19.jpg");
+  background-repeat: no-repeat;
+}  
