@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0 0 3rem 0;
+    font-family:'Poppins', sans-serif;
+    font-size: .938rem;
+    background-color: white;
+    color: black;
+}
+
+h1,h2,h3,h4{
+    color: black;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*=layout=*/
+.container{
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid{
+    /* display: flex; */
+    display: grid;
+    gap: 1.5rem;
+}
+
+main{
+    overflow: hidden;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* position: absolute; */
+    background:white;
+    z-index: 100;
+}
+
+/*=buttons=*/
+.button{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: 500;
+}
+
+.button:hover{
+    background-color: purple;
+}
+
+.button__icon{
+    font-size: 1.25rem;
+    margin-left: .5rem;
+    transition: .3s;
+}
+
+.button--white{
+    background-color: #fff;
+    color: purple;
+}
+
+.button--white:hover{
+    background-color: orange;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+.button--small{
+    padding: .75rem 1rem;
+}
+
+.button--link{
+    padding: 0;
+    background-color: transparent;
+    color: blue;
+}
+
+.button--link:hover{
+    background-color: transparent;
+    color: palegreen;
+}
+
+.services__button{
+    cursor: pointer;
+    font-size: .813rem;
+}
+
+.services__button:hover .button__icon{
+    transform: translateX(.25rem);
+}
+
+@media screen and (max-width: 767px){
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+    
+}
+
+/*=nav=*/
+.nav{
+    max-width: 968px;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,
+.nav__toggle{
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.nav__logo:hover{
+    color: purple;
+}
+
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav__toggle:hover{
+    color: purple;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+}
+
+.nav__link:hover{
+    color: purple;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.home{
+    background: linear-gradient(170deg, hsl(0,0%,22%)0%,hsl(0,0%,6%)30%);
+    background-image: ur;
+    padding-bottom: 0;
+}
+
+.home__container{
+    padding-top: 4rem;
+    row-gap: 3.5rem;
+}
+
+.home__title{
+    color: white;
+}
+
+.home__title{
+    font-size: 4rem;
+    line-height: 120%;
+    margin-bottom: 1.25rem;
+    padding-top: 6rem;
+}
+
+.home_descrption{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.home__images{
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.home__orbe{
+    width: 504px;
+    height: 611px;
+    background: linear-gradient(180deg, hsl(0,0%,16%)93%, hsl(0,0%,67%)100%);
+    border-radius: 256px 256px 0 0;
+}
+
+.home__img{
+    position: absolute;
+    width: 472px;
+    height: 634px;
+    overflow: hidden;
+    border-radius: 236px 236px 12px 12px;
+    display: inline-flex;
+    align-items: flex-end;
+    bottom: -4.5rem;
+    box-shadow: 0 16px 32px hsl(228, 66%, 25%, .25);
+}
+
+
+
+.popular__container{
+    padding: 1rem 0 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 1rem; 
+}
+
+.popular__card{
+    width: 290px;
+    background-color: whitesmoke;
+    padding: 1.5rem .5rem 1.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    transition: .4s;
+}
+
+.popular__img{
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.popular__data{
+    padding: 0 1rem 0 .5rem;
+}
+
+.popular__price{
+    font-size: 1.25rem ;
+    color: blue;
+    margin-bottom: .25rem;
+}
+
+.popular__price span{
+    color: blueviolet;
+}
+
+.popular__title{
+    font-size: 1rem;
+    margin-bottom: .75rem;
+}
+
+.popular__description{
+    font-size: .875rem;
+}
+
+.popular__card:hover{
+    box-shadow: 0 12px 16px hsl(228, 66%, 45%, .1);
+}
+
+/*=Footer=*/
+.footer{
+    padding-top: 2rem;
+}
+
+.footer__container{
+    row-gap: 3.5rem;
+}
+
+.footer__bg{
+    background-color: black;
+    padding: 2rem 0 3rem;
+}
+
+.footer__title{
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+
+.footer__subtitle{
+    font-size: .813rem;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footer__links:hover{
+    color: aqua;
+}
+
+.footer__social{
+    font-size: 1.25rem;
+    margin-right: 1.5rem;
+}
+
+.footer__social:hover{
+    color: aquamarine;
+}
+
+.footer__copy{
+    font-size: .75rem;
+    text-align: center;
+    color: blue;
+    margin-top: 3rem;
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__links,
+.footer__social{
+    color: #fff;
+}
+
+
+    
