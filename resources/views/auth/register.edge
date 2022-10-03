@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{--  bootstrap  --}}
+    {{-- bootstrap --}}
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
-    <title>Nombre_Apellido</title>
+    <link rel="stylesheet" href="css/app.css">
+    <title>Carlos Ortega</title>
+    
 </head>
 
-<body>
+<body class="bg-info">
+    <div class="container d-flex justify-content-center mt-5 rounded-2 ">
+        <div class="card  shadow-lg p-3 mb-5 bg-body rounded " style="width: 18rem;">
+            <div class="card-body">
+                <form action="/register" method="POST">
+                    <h2 class="text-center">Registarse</h2>
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" class="form-control mt-2">
+                    <label for="password" class="mt-2">password</label>
+                    <input type="password" name="password" id="password" class="form-control mt-2">
+                    <label for="password_confirmation" class="mt-2">password confirmation</label>
+                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control mt-2">
+                    <button type="submit" class="btn btn-primary mt-3 form-control">Registarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-     {{-- Content  --}}
-    <form action="/register" method="POST">
-        <label for="email">email</label>
-        <input type="email" name="email" id="email">
-        <label for="password">password</label>
-        <input type="password" name="password" id="password">
-        <label for="password_confirmation">password confirmation</label>
-        <input type="password" name="password_confirmation" id="password_confirmation">
-        <button type="submit">Registarse</button>
-    </form>
 
-    {{--  bootstrap  --}}
+
+    {{-- bootstrap --}}
+
+     <li><a href="/login">login</a></li>
+
+
     <script src="bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
 </body>
 

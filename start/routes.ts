@@ -39,3 +39,7 @@ Route.get('/page1', async ({ view }) => {
 Route.get('/page2', async ({ view }) => {
   return view.render('pages/page2')
 }).middleware('auth')
+
+Route.get('/page3', async ({ view }) => {
+  return view.render('pages/page3')
+}).middleware('auth')
